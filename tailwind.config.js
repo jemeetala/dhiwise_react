@@ -1,0 +1,53 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { lg: "1120px", xl: "1281px", "2xl": "1441px", "3xl": "1729px" },
+    extend: {
+      colors: {
+        gray_400: "#c4c4c4",
+        gray_500: "#969696",
+        red_700: "#cd3b3b",
+        red_A100: "#ef8484",
+        gray_800: "#393e46",
+        gray_900: "#0d1222",
+        indigo_A200: "#5463ff",
+        indigo_A100: "#7d88ff",
+        blue_A200: "#4e87db",
+        black_900_0c: "#0000000c",
+        amber_A200: "#ffd43c",
+        gray_300: "#dddddd",
+        gray_100: "#f4f4f4",
+        black_900: "#000000",
+        yellow_900: "#cd9812",
+        deep_purple_A200: "#aa3fff",
+        black_900_19: "#00000019",
+        white_A700: "#ffffff",
+      },
+      fontFamily: {
+        roboto: "Roboto",
+        mada: "Mada",
+        poppins: "Poppins",
+        signika: "Signika",
+      },
+      backgroundImage: { gradient: "linear-gradient(180deg ,#7d88ff,#aa3fff)" },
+      borderRadius: {
+        radius5: "5px",
+        radius05: "0.5px",
+        radius10: "10px",
+        radius50: "50%",
+      },
+      boxShadow: {
+        bs1: "0px 20px  20px 0px #0000000c",
+        bs: "0px 10px  20px 0px #00000019",
+        bs2: "0px 20px  20px 0px #00000019",
+      },
+      borderWidth: { bw15: "1.5px" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
